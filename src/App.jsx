@@ -1,10 +1,11 @@
-import Logo from "./assets/Logo.svg";
+// import Logo from "./assets/Logo.svg";
 
 import { useEffect } from "react";
 
 import About from "./Component/About";
 import Exp from "./Component/Exp";
 import Scroll from "./assets/Scroll.svg";
+import Nachiket from "./assets/Nachiket.svg";
 import { Image } from "@nextui-org/react";
 import Skill from "./Component/Skill";
 import Projects from "./Component/Project";
@@ -43,8 +44,20 @@ const App = () => {
               <div className="vector-container1 absolute top-5 right-10 m-4">
                 {/* <Vector /> */}
               </div>
-              {/* <Logo className=" h-80% w-1/2" /> */}
-              <img src={Logo} className=" h-80% w-full sm:w-1/2 ob" />
+              {/* Old logo removed */}
+              {/* <img
+                src={Logo}
+                className=" h-80% w-full sm:w-1/2 
+              "
+              /> */}
+
+              {/* New Logo */}
+
+              <img
+                src={Nachiket}
+                className=" h-80% w-full sm:w-1/2 
+              "
+              />
             </div>
             <div className="rectangle absolute top-1/2 mt-36  w-full flex justify-center items-center">
               <div className="box absolute bg-[#F0F8FF] bg-opacity-75 rounded-full border-2 border-black  py-2 flex justify-center items-center mr-36">
@@ -58,8 +71,9 @@ const App = () => {
                 {/* <Image src={Vector} /> */}
               </div>
               <div className="scroll-container absolute top-60 right-36  mr-2">
-                <a href="#Scroll"><Image src={Scroll} /></a>
-                
+                <a href="#Scroll">
+                  <Image src={Scroll} />
+                </a>
               </div>
             </div>
           </div>
